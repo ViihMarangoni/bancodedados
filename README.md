@@ -61,7 +61,8 @@ insert into jogos(id, nome, quantidade, tempo_medio_min) values(100, 'Truco', '6
 
 aspas simples ' quando o campo é VARCHAR
 
- select * from jogos; = mostra a tabela montada
+
+ select * from jogos; = seleciona todos os dados montados
 
 +------+-------+------------+-----------------+
 
