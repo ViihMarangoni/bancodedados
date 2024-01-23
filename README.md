@@ -23,46 +23,48 @@ A Linguagem de consulta estruturada (SQL) é uma linguagem de programação para
 
 ## Trabalhando com MySQL
 ## Conectando
-mysql -h localhost -u root
 
--h = computador que ele vai conectar
+conectar no servidor de banco de dados:
+`mysql -h localhost -u root`
 
-localhost = é o usuário que ele vai conectar
+`-h` = computador que ele vai conectar
 
--u = informar o usuario
+`localhost` = é o usuário que ele vai conectar
 
-root = nome usuario
+`-u` = informar o usuario
 
--p = senha
+`root` = nome usuario
 
-\h = ajuda
+`-p` = senha
 
-\c = limpa
+`\h` = ajuda
 
-show databases; = mostra todos os bancos de dados do seu computador.
+`\c` = limpa
 
-drop database; = "nome do banco de dados que eu quero apagar"
+`show databases;` = mostra todos os bancos de dados do seu computador.
 
-create database; = "nome do banco de dados que eu quero criar"
+`drop database;` = "nome do banco de dados que eu quero apagar"
 
-use; = "nome do banco de dados" ativar
+`create database;` = "nome do banco de dados que eu quero criar"
+
+`use;` = "nome do banco de dados" ativar
 
 varchar(100) = aceita qualquer coisa sem caracteres , letras, numeros, acentos . , 
 
-create table jogos(id int, nome varchar(100), quantidade varchar(20), tempo_medio_min int); = cria uma tabela (nome do campo - tipo de dados)
+`create table jogos(id int, nome varchar(100), quantidade varchar(20), tempo_medio_min int);` = cria uma tabela (nome do campo - tipo de dados)
 
-desc jogos = ve a estrutura da tabela
+`desc jogos` = ve a estrutura da tabela
 
 ** sempre que estives o show = tables - databases
 
 ** quando não tiver o show = table - database
 
-insert into jogos(id, nome, quantidade, tempo_medio_min) values(100, 'Truco', '6',20); = cria a tabela abaixo
+`insert into jogos(id, nome, quantidade, tempo_medio_min) values(100, 'Truco', '6',20);` = cria a tabela abaixo
 
 aspas simples ' quando o campo é VARCHAR
 
 
- select * from jogos; = seleciona todos os dados montados
+ `select * from jogos;` = seleciona todos os dados montados
 
 +------+-------+------------+-----------------+
 
@@ -73,4 +75,3 @@ aspas simples ' quando o campo é VARCHAR
 |  100 | Truco | 6          |              20 |
 
 +------+-------+------------+-----------------+
-
