@@ -41,6 +41,11 @@ conectar no servidor de banco de dados:
 
 `\c` = limpa
 
+`update nome_da_tabela set nome='nome_do_campo' where id = id_do_campo` = alterar o nome do campo
+`update vendedores set nome='John' where id = 2;` = altera o nome do id=2 para John
+
+`delete from nome_da_tabela where id > 2` = apaga todos os id que são maior que 2
+
 `show databases;` = mostra todos os bancos de dados do seu computador.
 
 `drop database;` = "nome do banco de dados que eu quero apagar"
